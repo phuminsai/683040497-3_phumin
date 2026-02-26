@@ -90,6 +90,7 @@ class InventoryApp(QMainWindow):
         clear_button = QPushButton("Clear All")
         clear_button.clicked.connect(self.clear_all)
         button_layout.addWidget(clear_button)
+        
     def on_id_changed(self, text):
         if text in student_dict:
             self.student_name_input.setText(student_dict[text])
